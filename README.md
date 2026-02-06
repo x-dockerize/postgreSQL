@@ -10,20 +10,30 @@
 ## Kurulum
 
 1. Bu repo’yu klonlayın:
->  git clone https://github.com/x-dockerize/postgreSQL.git
+```shell
+git clone https://github.com/x-dockerize/postgreSQL.git
+```
 
 2. PostgreSQL Network Oluşturulması
 Kurulumanan sonra, PostgreSQL container’ının çalıştığı network’ü oluşturun:
-> docker network create postgres-network
+```shell
+docker network create postgres-network
+```
 
 3. .env.example dosyasını .env olarak kopyalayın ve içindeki değerleri kendi ortamınıza göre düzenleyin:
-> cp .env.example .env
+```shell
+cp .env.example .env
+```
 
 4. docker-compose.production.yml dosyasını docker-compose.yml olarak kopyalayın:
-> cp docker-compose.production.yml docker-compose.yml
+```shell
+cp docker-compose.production.yml docker-compose.yml
+```
 
 5. Docker Compose ile container’ları başlatın:
-> docker-compose up -d
+```shell
+docker-compose up -d
+```
 
 ---
 
